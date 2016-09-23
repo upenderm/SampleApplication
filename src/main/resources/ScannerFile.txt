@@ -1,0 +1,4 @@
+India:Delhi
+Hyderabad
+Telangana:Hyderabad
+AndhraPradesh:Amaravathi

@@ -1,0 +1,20 @@
+Java 7:
+===========
+
+1) Try-with-resources construct
+try (FileInputStream fis = new FileInputStream("file1.txt")){}
+2) Catching multiple exceptions in same catch block
+try {}catch(SQLException e || IOException ex){}
+3) Usage of diamond operator in Generics
+List<String> cityList = new ArrayList<>();
+4) Using Strings in switch statements - Takes string type as an argument
+switch(status) {
+            caseNEW:
+newTrade(t);
+break;
+}
+5) Fork join 
+Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. The core classes supporting the Fork-Join mechanism are ForkJoinPool and ForkJoinTask.
+6) Underscores in numeric literals
+int one_million = 10_00_000;
+7) varargs

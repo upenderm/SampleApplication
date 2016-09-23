@@ -25,6 +25,7 @@ public class EnumExample3 {
       System.out.println(Languages.JAVA);
       System.out.println(Languages.DOTNET.getLanguageRating());
       System.out.println(Languages.ORACLE.getLanguageDescription());
+      System.out.println(EnumExample3.Languages.JAVA);
 
    }
 

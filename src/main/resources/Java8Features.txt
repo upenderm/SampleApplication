@@ -1,0 +1,8 @@
+1) Lambda expressions
+2) Parallel Operations
+3) Java script support (JVM Java script engine)
+4) New Date / Time api
+5) Concurrent Accumulators
+6) Enhanced foreach loop
+Map<Integer, String> map=new Hashmap<>();
+map.forEach((k,v)->System.out.println("Item :"+k+" Value :"+v));

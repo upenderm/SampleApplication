@@ -2,20 +2,14 @@ package com.test.samples.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
 
-import com.test.samples.model.Employee;
 import com.test.samples.model.EmployeeV2;
 
 public class SortingTestV2 {
 
    public static void main(String[] args) {
-      List<EmployeeV2> list = new ArrayList<EmployeeV2>();
+      List<EmployeeV2> list = new ArrayList<>(); // Java 7 feature, 20/09/2016
       list.add(new EmployeeV2(15, "Delhi"));
       list.add(new EmployeeV2(61, "Mumbai"));
       list.add(new EmployeeV2(17, "Calcutta"));

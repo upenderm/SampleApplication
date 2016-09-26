@@ -6,8 +6,14 @@ import java.io.IOException;
 public class UpdatedFeatures {
 
 	public static void main(String[] args) throws IOException {
-		try (FileOutputStream fis = new FileOutputStream("file1.txt")){
-			
+		try (FileOutputStream fis = new FileOutputStream("file1.txt")) { // this
+																			// is
+																			// called
+																			// try
+																			// with
+																			// resource
+																			// leaks
+
 			System.out.println("Hello world");
 		}
 	}

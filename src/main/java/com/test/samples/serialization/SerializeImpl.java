@@ -1,5 +1,6 @@
 package com.test.samples.serialization;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -8,7 +9,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class SerializeImpl {
-	
+	static String filePath = System.getProperty("user.dir") + File.separator
+			+ "src" + File.separator + "main" + File.separator + "resources";
+	static String fileName = filePath + File.separator + "SerializationTestFile.txt";
 	public static void main(String[] args) {
 		SerializationTest st = new SerializationTest();
 		st.setEmployeeID(257886);
@@ -16,12 +19,12 @@ public class SerializeImpl {
 		st.setEmpSalary("50000");
 		
 		try {
-			FileOutputStream fos = new FileOutputStream("c:\\MyDrive\\JavaProgramCreatedThisFolder\\SerializeProgram2.txt", true);
+			FileOutputStream fos = new FileOutputStream(fileName, true);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(st);
 			oos.close();
 			
-			FileInputStream fis = new FileInputStream("c:\\MyDrive\\JavaProgramCreatedThisFolder\\SerializeProgram2.txt");
+			FileInputStream fis = new FileInputStream(fileName);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			SerializationTest st2 = (SerializationTest)ois.readObject();
 			System.out.println("employee id is :"+st2.getEmployeeID());

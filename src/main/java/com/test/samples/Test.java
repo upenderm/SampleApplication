@@ -14,7 +14,5 @@ public class Test {
          System.out.println(dd.getValue());
       }
 
-      
-      System.out.println(EnumTest.valueOf(1));
    }
 }

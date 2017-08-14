@@ -13,13 +13,14 @@ public class Cars extends TwoWheeler{
 	}
 
 	public void setVehicleType(String vehicleType) {
+//		super.setVehicleType("Petrol emission");/
 		this.vehicleType = vehicleType;
 	}
 	
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 

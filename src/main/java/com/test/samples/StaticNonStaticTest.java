@@ -7,6 +7,7 @@ public class StaticNonStaticTest {
       System.out.println(empAddress);
       StaticNonStaticTest sc = new StaticNonStaticTest();
       sc.display();
+      
    }
    public void display(){
       System.out.println(empName);

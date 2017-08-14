@@ -14,7 +14,8 @@ public class Fruits {
    public int hashCode() {
       return quantity.hashCode();
    }
-
+   
+   @Override
    public boolean equals(Object o) {
       Fruits f = (Fruits) o;
       if(this.quantity == f.quantity && this.fruitName.equals(f.fruitName))

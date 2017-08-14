@@ -2,6 +2,7 @@ package com.test.samples.util;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -14,10 +15,30 @@ public class SetImplsTest {
 		st.add(new Integer(6));
 		st.add(new Integer(7));
 		st.add(new Integer(5));
+		st.add(new Integer(1));
+		st.add(new Integer(4));
+		st.add(new Integer(3));
+		st.add(new Integer(2));
 
 		Iterator it = st.iterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());
+		}
+
+		System.out.println("Hello......This test is using Set and LinkedHashSet");
+		Set st5 = new LinkedHashSet();
+		st5.add(new Integer(5));
+		st5.add(new Integer(6));
+		st5.add(new Integer(7));
+		st5.add(new Integer(5));
+		st5.add(new Integer(1));
+		st5.add(new Integer(4));
+		st5.add(new Integer(3));
+		st5.add(new Integer(2));
+
+		Iterator it5 = st5.iterator();
+		while (it5.hasNext()) {
+			System.out.println(it5.next());
 		}
 
 		Set st2 = new HashSet();
@@ -40,6 +61,10 @@ public class SetImplsTest {
 		st3.add(new Integer(6));
 		st3.add(new Integer(7));
 		st3.add(new Integer(5));
+		st3.add(new Integer(1));
+		st3.add(new Integer(4));
+		st3.add(new Integer(3));
+		st3.add(new Integer(2));
 
 		Iterator it3 = st3.iterator();
 		while (it3.hasNext()) {

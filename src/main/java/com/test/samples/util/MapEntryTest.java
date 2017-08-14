@@ -12,6 +12,7 @@ public class MapEntryTest {
 		fruitMap.put(3, "Oranges");
 		fruitMap.put(4, "Grapes");
 		fruitMap.put(5, "Papaya");
+		fruitMap.put(6, "Grapes");
 		for (Map.Entry<Integer, String> entry : fruitMap.entrySet()) {
 			System.out.println(entry.getKey() + " --> " + entry.getValue());
 		}

@@ -6,6 +6,9 @@ public class SingleTonDemo {
       SingleTonObject.getInstance().getDBConnection();
       SingleTonObject.getInstance().getDBConnection();
       SingleTonObject.getInstance().getDBConnection();
+      
+      SingleTonObject instance = SingleTonObject.getInstance();
+      
    }
 
 }

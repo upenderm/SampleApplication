@@ -3,6 +3,11 @@ package com.test.samples.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class ScannerFileExample {
@@ -30,7 +35,12 @@ public class ScannerFileExample {
 					+ System.getProperty("user.dir"));
 			
 		}
-
+		try {
+			Files.lines(Paths.get(new URI("")));
+		} catch (IOException | URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

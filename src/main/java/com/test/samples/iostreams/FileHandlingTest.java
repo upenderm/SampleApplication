@@ -9,15 +9,14 @@ public class FileHandlingTest {
 
 	public static void main(String[] args) {
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\mamindu\\Desktop\\New Text Document.txt"); 
+			FileInputStream fis = new FileInputStream("..\\SampleApplication\\src\\main\\resources\\temp.txt"); 
 			int size = fis.available();
 			byte[] br = new byte[size];
 			fis.read(br);
-			
 			String data = new String(br);
 			System.out.println(data);
-			FileOutputStream fos = new FileOutputStream("c:\\MyDrive\\JavaProgramCreatedThisFolder\\IcameFromJavaProgram.txt", true);
 			
+			FileOutputStream fos = new FileOutputStream("..\\SampleApplication\\src\\main\\resources\\IcameFromJavaProgram.txt", true);
 			byte[] ba = data.getBytes();
 			fos.write(ba);
 			

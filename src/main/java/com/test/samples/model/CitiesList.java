@@ -34,4 +34,9 @@ public class CitiesList {
       return vct;
    }
 
+	private String testMethodAndNotUsingAnyWhere() {
+		System.out.println("Hello World I'm a private method. Please don't access me...");
+		return "Hello World";
+	}
+
 }

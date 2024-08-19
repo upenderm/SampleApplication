@@ -10,6 +10,7 @@ public class RepititiveCharactersIdentifier {
 		RepititiveCharactersIdentifier obj = new RepititiveCharactersIdentifier();
 		obj.identifyRepitiveCharacters(str);
 		obj.identifySequentialRepitiveCharacters(str);
+		obj.identifySequentialRepitiveCharacters2(str);
 	}
 
 	private void identifySequentialRepitiveCharacters(String str) {
@@ -45,6 +46,29 @@ public class RepititiveCharactersIdentifier {
 			}
 		}
 		System.out.println("Final result =" + map);
+	}
+	
+	private void identifySequentialRepitiveCharacters2(String str) {
+		char[] charArray = str.toCharArray();
+		
+		
+		int count = 1;
+		int maxCount = 1;
+		char currentChar = charArray[0];
+		char maxChar = charArray[0];
+		for (int i=1;i<charArray.length;i++) {
+			if(currentChar==charArray[i]) {
+				count ++;
+			} else {
+				if(count > maxCount) {
+					maxCount = count;
+					maxChar = currentChar;
+				}
+				count = 1;
+				currentChar = charArray[i];
+			}
+		}
+		System.out.println("......"+maxChar + maxCount );
 	}
 
 }

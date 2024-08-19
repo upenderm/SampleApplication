@@ -10,6 +10,9 @@ public class Test {
 
 	public static void main(String[] args) {
 		Test t = new Test();
+		
+		System.out.println(RandomStringUtils.randomAlphanumeric(16).toUpperCase());
+		
 		System.out.println(t.getRandomString(10));
 		System.out.println(t.getRandomString(16));
 		System.out.println(t.getRandomString(5));

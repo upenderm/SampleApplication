@@ -27,8 +27,6 @@ public class GroupByElements {
 		Map<String, List<Fruits>> collect = list.stream()
 				.collect(Collectors.groupingBy(Fruits::getFruitName, TreeMap::new, Collectors.toList()));
 		collect.values().forEach(System.out::println);
-		
-		
 
 	}
 

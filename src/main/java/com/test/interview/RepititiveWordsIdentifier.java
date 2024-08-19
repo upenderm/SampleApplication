@@ -25,11 +25,11 @@ public class RepititiveWordsIdentifier {
 		
 		Set<String> collect = list.stream().filter(a -> {
 //			System.out.println(">>-------->"+a+"::"+ Collections.frequency(list, a));
-			int i=0;
+//			int i=1;
 			if(list2.contains(a)) {
 //				System.out.println(a);
-				i++;
-				map.replace(a, i);
+//				i++;
+				map.replace(a, map.get(a)+1);
 				return true;
 			} else {
 				list2.add(a);
@@ -37,6 +37,7 @@ public class RepititiveWordsIdentifier {
 			}
 			return false;
 		}).collect(Collectors.toSet());
+		System.out.println(map);
 
 		String str2="java test code done";
 		System.out.println(str2);

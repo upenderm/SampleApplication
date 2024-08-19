@@ -3,4 +3,5 @@
 .project
 *.md
 target
+src/main/java/com/test/samples/jdbc/OracleAutonomousDBConnectionTest.java
 /Wallet_c4clouddb12102023/
